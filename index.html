@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="./css/index.css">
   <!-- FontAwesome -->
   <link rel="stylesheet" href="./assets/fontawesome-free-6.6.0-web/css/all.min.css">
+  <!-- Script -->
+   <script src="./js/index.js" defer></script>
   <title>Ortho Estetic</title>
 </head>
 
@@ -17,14 +19,14 @@
 
     <header class="container__header">
       <nav class="header__nav">
+        <span class="toggle"><a id="nav-toggle"><i class="fas fa-bars"></i></a></span>
         <ul class="header__nav--list">
           <li class="header__nav--logo"><a href="#">Ortho Estetic</a></li>
-          <li class="header__nav--item">Home</li>
-          <li class="header__nav--item">Services</li>
-          <li class="header__nav--item">Gallery</li>
-          <li class="header__nav--item">About</li>
+          <li class="header__nav--item"><a href="#">Home</a></li>
+          <li class="header__nav--item"><a href="#">Services</a></li>
+          <li class="header__nav--item"><a href="#">Gallery</a></li>
+          <li class="header__nav--item"><a href="#">About</a></li>
           <li class="header__nav--item header__nav--btn"><a href="#">Contact Us</a></li>
-          <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
     </header>
@@ -104,6 +106,7 @@
         <div class="equipment__block">
           <h2 class="equipment__subtitle">High End Equipments</h2>
           <p class="equipment__text">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</p>
+          <!-- Equipo 1 -->
           <div class="equipment__equip">
             <div class="equip__data">
               <h4 class="equip__data--name">Dental Operatory Lights</h4>
@@ -112,6 +115,17 @@
             <div class="equip__bar--data">
               <div class="equip__bar"></div>
               <div class="equip__percentage equip__percentage--operatory"></div>
+            </div>
+          </div>
+          <!-- Equipo 2 -->
+          <div class="equipment__equip">
+            <div class="equip__data">
+              <h4 class="equip__data--name">Operatory Cabinery</h4>
+              <span class="equip__data--number">90%</span>
+            </div>
+            <div class="equip__bar--data">
+              <div class="equip__bar"></div>
+              <div class="equip__percentage equip__percentage--cabynery"></div>
             </div>
           </div>
           <button class="equipment__btn">Learn More <span><i class="fa-solid fa-arrow-right"></i></span></button>
@@ -126,6 +140,8 @@
       <section class="main__hygiene">
         <picture class="hygiene__block--image">
           <img class="hygiene__image" src="./assets/images/index/hygiene/icon-hygiene-tooth.webp" alt="">
+          <div class="hygiene__div--blue"></div>
+          <div class="hygiene__div--violet"></div>
         </picture>
         <div class="hygiene__block--info">
           <h3 class="hygiene__subtitle">If you have any questions, please get in touch now</h3>
@@ -151,8 +167,42 @@
 
     </main>
 
-    <footer class="container__footer">
+    <hr>
 
+    <footer class="container__footer">
+      <section class="footer__contact">
+        <h6 class="contact__title">Ortho Estetic</h6>
+        <p class="contact__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aut libero commodi laboriosam. Harum dolore eveniet sed modi, neque ipsa nulla odit tempora similique fugiat cum ullam dicta quos rerum.</p>
+        <div class="contact__icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-square-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+        </div>
+      </section>
+      
+      <section class="footer__sites">
+        <h6 class="sites__title">Site Navigation</h6>
+          <ul class="sites__list">
+            <li class="sites__item">Consultation</li>
+            <li class="sites__item">Consultation</li>
+            <li class="sites__item">Consultation</li>
+            <li class="sites__item">Consultation</li>
+            <li class="sites__item">Consultation</li>
+          </ul>
+      </section>
+
+      <section class="footer__news">
+        <div class="news__item">
+          <picture class="news__picture">
+            <img src="" alt="" class="news__image">
+          </picture>
+          <div class="news__text">
+            <h6 class="news__title">Top 5 Tips</h6>
+            <p class="news__date">24-09-2024</p> 
+          </div>
+        </div>
+      </section>
     </footer>
 
   </div>
