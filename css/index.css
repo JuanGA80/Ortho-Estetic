@@ -12,17 +12,12 @@ body {
   background-color: #fff;
 }
 
-img {
-  width: 50px;
-}
-
 /* Container */
 
 .container {
   width: 100%;
   height: 100%;
   position: relative;
-  background-color: #6a6ee2;
 }
 
 /* Header */
@@ -330,6 +325,7 @@ img {
   background-color: #000;
   color: #fff;
   transition: all 0.5s ease-in;
+  margin-top: 1.2rem;
 }
 
 .equipment__btn:hover {
@@ -449,7 +445,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.7rem;
+  gap: 1rem;
 }
 
 .contact__title {
@@ -464,14 +460,6 @@ img {
   text-align: left;
 }
 
-.footer__sites {
-  flex-basis: 30%;
-}
-
-.footer__news {
-  flex-basis: 30%;
-}
-
 .contact__icons {
   width: 100%;
   display: flex;
@@ -480,6 +468,7 @@ img {
 
 .contact__icons i {
   border-radius: 100%;
+  color: #b9b9b9;
   font-size: 1.5rem;
   border: 1px solid #fff;
   padding: 0.5rem;
@@ -490,10 +479,81 @@ img {
 .contact__icons i:hover {
   opacity: 1;
   color: #fff;
+  cursor: pointer;
 }
 
+.footer__sites {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  box-sizing: border-box;
+  flex-basis: 30%;
+  color: #fff;
+}
 
+.sites__title{
+  font-size: 1.3rem;
+  text-align: center;
+}
 
+.sites__list{
+  list-style-type: none;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.sites__item{
+  line-height: 1.5rem;
+}
+
+.footer__news {
+  width: 100%;
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.news__title{
+  font-size: 1.3rem;
+}
+
+.news__item{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0.3rem;
+  gap: 0.5rem;
+}
+
+.new__picture{
+  flex-basis: 40%;
+}
+
+.new__image{
+  width: 100%;
+}
+
+.new__tex{
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-weight:normal;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.new__title{
+  font-size: 1.1rem;
+}
+
+.new__date{
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
 
 /* End PC View */
 
@@ -543,8 +603,16 @@ img {
   }
 
   .header__nav--logo {
+    margin-right: 0;
     font-size: 1.5rem;
     font-weight: bold;
+  }
+
+  .header__nav--btn {
+    margin-left: 0; /* Eliminar el margen izquierdo automático en móvil */
+    background-color: #000000;
+    color: #fff;
+    border-radius: 5px;
   }
 
   .header__nav--btn a {
@@ -961,6 +1029,7 @@ img {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    gap: 1rem;
   }
 
   .contact__icons i {
