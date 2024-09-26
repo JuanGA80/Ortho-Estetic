@@ -715,7 +715,7 @@ body {
   }
 
   .presentation__row--text {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: justify;
   }
 
@@ -775,8 +775,8 @@ body {
   }
 
   .guaranteed__text {
-    font-size: 1.2rem;
-    text-align: justify;
+    font-size: 0.9rem;
+    text-align: center;
   }
 
   .guaranteed__cards {
@@ -821,7 +821,7 @@ body {
   }
 
   .guaranteed__card--text {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 
   /* Section Equipment */
@@ -848,12 +848,12 @@ body {
   }
 
   .equipment__subtitle {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: center;
   }
 
   .equipment__text {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     text-align: justify;
   }
 
@@ -983,7 +983,7 @@ body {
   }
 
   .hygiene__text {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 
   .hygiene__cards {
@@ -1015,24 +1015,28 @@ body {
   }
 
   .hygiene__block--text {
-    font-size: 1.2rem;
+    font-size: 0.85rem;
   }
 
   /* Footer */
 
   .container__footer {
     width: 100%;
-    padding: 2rem 1rem;
     background-color: #2e3192;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .footer__contact {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 0.7rem;
+    width: 90%;
+    min-height: 100%;
+    text-align: center;
   }
 
   .contact__title {
@@ -1056,7 +1060,6 @@ body {
   }
 
   .contact__icons {
-    width: 100%;
     display: flex;
     justify-content: space-evenly;
     gap: 1rem;
