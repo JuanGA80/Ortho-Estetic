@@ -4,10 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Hoja de estilos -->
+  <!-- Lora font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <!-- Style sheet -->
   <link rel="stylesheet" href="./css/index.css">
   <!-- FontAwesome -->
   <link rel="stylesheet" href="./assets/fontawesome-free-6.6.0-web/css/all.min.css">
+  <!-- CDN Swiper Js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- Script -->
   <script src="./js/index.js" defer></script>
   <title>Ortho Estetic</title>
@@ -74,34 +82,57 @@
         <p class="guaranteed__text">On the other hand, we denounce with righteous indignation and dislike men
           who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</p>
         <section class="guaranteed__cards">
-          <div class="guaranteed__card">
-            <picture class="guaranteed__card--picture">
-              <img class="guaranteed__card--image" src="./assets/images/index/guaranteed/tooth-vector.webp"
-                alt="icon-tooth" title="icon-tooth">
-            </picture>
-            <h4 class="guaranteed__card--subtitle">Teeth Whitening</h4>
-            <p class="guaranteed__card--text">There are many vacations of passages of Lorem ipsum available, but the
-              majority have suffered alteration in some form</p>
-          </div>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="guaranteed__card">
+                  <picture class="guaranteed__card--picture">
+                    <img class="guaranteed__card--image" src="./assets/images/index/guaranteed/tooth-vector.webp"
+                      alt="icon-tooth" title="icon-tooth">
+                  </picture>
+                  <h4 class="guaranteed__card--subtitle">Teeth Whitening 1</h4>
+                  <p class="guaranteed__card--text">There are many vacations of passages of Lorem ipsum available, but
+                    the
+                    majority have suffered alteration in some form</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="guaranteed__card">
+                  <picture class="guaranteed__card--picture">
+                    <img class="guaranteed__card--image" src="./assets/images/index/guaranteed/tooth-vector.webp"
+                      alt="icon-tooth" title="icon-tooth">
+                  </picture>
+                  <h4 class="guaranteed__card--subtitle">Teeth Whitening 2</h4>
+                  <p class="guaranteed__card--text">There are many vacations of passages of Lorem ipsum available, but
+                    the
+                    majority have suffered alteration in some form</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="guaranteed__card">
+                  <picture class="guaranteed__card--picture">
+                    <img class="guaranteed__card--image" src="./assets/images/index/guaranteed/tooth-vector.webp"
+                      alt="icon-tooth" title="icon-tooth">
+                  </picture>
+                  <h4 class="guaranteed__card--subtitle">Teeth Whitening 3</h4>
+                  <p class="guaranteed__card--text">There are many vacations of passages of Lorem ipsum available, but
+                    the
+                    majority have suffered alteration in some form</p>
+                </div>
+              </div>
 
-          <div class="guaranteed__card">
-            <picture class="guaranteed__card--picture">
-              <img class="guaranteed__card--image" src="./assets/images/index/guaranteed/tooth-vector.webp"
-                alt="icon-tooth" title="icon-tooth">
-            </picture>
-            <h4 class="guaranteed__card--subtitle">Teeth Whitening</h4>
-            <p class="guaranteed__card--text">There are many vacations of passages of Lorem ipsum available, but the
-              majority have suffered alteration in some form</p>
-          </div>
+            </div>
 
-          <div class="guaranteed__card">
-            <picture class="guaranteed__card--picture">
-              <img class="guaranteed__card--image" src="./assets/images/index/guaranteed/tooth-vector.webp"
-                alt="icon-tooth" title="icon-tooth">
-            </picture>
-            <h4 class="guaranteed__card--subtitle">Teeth Whitening</h4>
-            <p class="guaranteed__card--text">There are many vacations of passages of Lorem ipsum available, but the
-              majority have suffered alteration in some form</p>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
           </div>
         </section>
       </section>
@@ -209,15 +240,31 @@
 
         <div class="news__item">
           <picture class="new__picture">
-            <img class="new__image" src="./assets/images/index/news/news-image-1.webp" alt="" >
+            <img class="new__image" src="./assets/images/index/news/news-image-1.webp" alt="">
           </picture>
           <div class="new__text">
             <h6 class="new__title">Top 5 Tips</h6>
             <p class="new__date">24-09-2024</p>
           </div>
         </div>
+
+        <div class="news__item">
+          <picture class="new__picture">
+            <img class="new__image" src="./assets/images/index/news/news-image-1.webp" alt="">
+          </picture>
+          <div class="new__text">
+            <h6 class="new__title">Top 5 Tips</h6>
+            <p class="new__date">24-09-2024</p>
+          </div>
+        </div>
+
       </section>
     </footer>
+
+
+
+
+
 
   </div>
 
