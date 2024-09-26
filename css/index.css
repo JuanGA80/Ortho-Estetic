@@ -50,7 +50,7 @@ body {
 
 .header__nav--item {
   margin: 0 15px;
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 .header__nav--item a {
@@ -60,7 +60,7 @@ body {
 
 .header__nav--logo {
   margin-right: auto;
-  font-size: 1.3rem;
+  font-size: 2rem;
 }
 
 .header__nav--logo a {
@@ -83,7 +83,7 @@ body {
 .header__nav--btn:hover,
 .header__nav--btn a:hover {
   opacity: 0.6;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
 .toggle {
@@ -121,17 +121,17 @@ body {
 
 .presentation__row--subtitle {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   text-align: left;
 }
 
 .presentation__row--text {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: left;
 }
 
 .presentation__row--btn {
-  font-size: 1rem;
+  font-size: 1.3rem;
   padding: 0.6rem;
   width: 50%;
   border: none;
@@ -142,7 +142,7 @@ body {
 
 .presentation__row--btn:hover {
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   opacity: 0.7;
 }
 
@@ -182,18 +182,18 @@ body {
 }
 
 .guaranteed__title {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   font-weight: bold;
 }
 
 .guaranteed__text {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   text-align: center;
   width: 60%;
 }
 
 .guaranteed__cards {
-  width: 70%;
+  width: 90%;
 }
 
 .guaranteed__card {
@@ -210,12 +210,12 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-.guaranteed__card:hover{
+.guaranteed__card:hover {
   background-color: #acf8f4;
 }
 
 .guaranteed__card--picture {
-  width: 10%;
+  width: 20%;
   margin: auto auto;
   display: flex;
   align-items: center;
@@ -228,12 +228,12 @@ body {
 }
 
 .guaranteed__card--subtitle {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   font-weight: 700;
 }
 
 .guaranteed__card--text {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 /* Section Equipment */
@@ -262,18 +262,18 @@ body {
 }
 
 .equipment__subtitle {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   text-align: center;
 }
 
 .equipment__text {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   text-align: justify;
 }
 
 .equipment__equip {
   display: flex;
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin-top: 5px;
   flex-direction: column;
   gap: 0.3rem;
@@ -320,7 +320,7 @@ body {
 }
 
 .equipment__btn {
-  font-size: 1rem;
+  font-size: 1.3rem;
   padding: 0.6rem;
   width: 100%;
   border: none;
@@ -332,7 +332,7 @@ body {
 
 .equipment__btn:hover {
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   opacity: 0.7;
 }
 
@@ -352,6 +352,9 @@ body {
   flex-basis: 50%;
   position: relative;
   display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hygiene__div--blue {
@@ -366,6 +369,9 @@ body {
 
 .hygiene__div--violet {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 0;
   right: 0;
   width: 45%;
@@ -375,7 +381,7 @@ body {
 }
 
 .hygiene__image {
-  width: 100%;
+  width: 80%;
   display: block;
   z-index: 2;
   position: relative;
@@ -391,12 +397,12 @@ body {
 }
 
 .hygiene__subtitle {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   text-align: left;
 }
 
 .hygiene__text {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .hygiene__cards {
@@ -426,11 +432,11 @@ body {
 }
 
 .hygiene__card--subtitle {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 
 .hygiene__block--text {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 /* Footer */
@@ -452,13 +458,13 @@ body {
 }
 
 .contact__title {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   color: #fff;
   text-align: left;
 }
 
 .contact__text {
-  font-size: 1rem;
+  font-size: 1.4rem;
   color: #fff;
   text-align: left;
 }
@@ -472,7 +478,7 @@ body {
 .contact__icons i {
   border-radius: 100%;
   color: #b9b9b9;
-  font-size: 1.5rem;
+  font-size: 2rem;
   border: 1px solid #fff;
   padding: 0.5rem;
   transition: all 0.5s ease-in-out;
@@ -495,21 +501,21 @@ body {
 }
 
 .sites__title {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   text-align: center;
 }
 
 .sites__list {
   list-style-type: none;
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-align: center;
 }
 
 .sites__item {
-  line-height: 1.5rem;
+  line-height: 2rem;
 }
 
-.sites__item:hover{
+.sites__item:hover {
   cursor: pointer;
 }
 
@@ -524,7 +530,7 @@ body {
 }
 
 .news__title {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
 }
 
 .news__item {
@@ -558,12 +564,12 @@ body {
 }
 
 .new__title {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
 }
 
 .new__date {
   font-size: 0.8rem;
-  margin-top: 1rem;
+  margin-top: 1.3rem;
 }
 
 /* Swiper JS */
@@ -792,7 +798,7 @@ body {
     box-shadow: 21px 4px 10px -3px rgba(0, 0, 0, 0.59);
   }
 
-  .guaranteed__card:hover{
+  .guaranteed__card:hover {
     background-color: #acf8f4;
   }
 
@@ -922,14 +928,18 @@ body {
     padding: 1rem;
     display: flex;
     gap: 0.5rem;
+    align-items: center;
     flex-direction: column;
     margin-bottom: 2rem;
   }
 
   .hygiene__block--image {
-    width: 100%;
+    width: 40%;
     position: relative;
     display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .hygiene__div--blue {
@@ -953,7 +963,7 @@ body {
   }
 
   .hygiene__image {
-    width: 100%;
+    width: 80%;
     display: block;
     z-index: 2;
     position: relative;

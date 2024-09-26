@@ -35,5 +35,13 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 640px
+    769: {
+      slidesPerView: 3,
+    }
+  }
+
   
 });
