@@ -28,8 +28,11 @@
     <header class="container__header">
       <nav class="header__nav">
         <span class="toggle"><a id="nav-toggle"><i class="fas fa-bars"></i></a></span>
+        <span class="close"><a id="nav-close"><i class="fas fa-x"></i></a></span>
+        <div class="header__logo">
+          <a href="#" class="header__logo--anchor"><img class="header__logo--image" src="./assets/images/logo-othoestetic.webp" alt=""></a>
+        </div>
         <ul class="header__nav--list">
-          <li class="header__nav--logo"><a href="#">Ortho Estetic</a></li>
           <li class="header__nav--item"><a href="#">Home</a></li>
           <li class="header__nav--item"><a href="#">Services</a></li>
           <li class="header__nav--item"><a href="#">Gallery</a></li>
@@ -50,7 +53,7 @@
           </div>
           <div class="presentation__row--image">
             <picture class="presentation__row--picture">
-              <img src="./assets/images/index/presentation/presentation-image-1.webp" alt="Chica sonriendo"
+              <img src="./assets/images/index/presentation/presentation-image-2.webp" alt="Chica sonriendo"
                 class="presentation__row--img" title="Sonrisa Ejemplo">
             </picture>
           </div>
@@ -78,46 +81,54 @@
       <hr>
 
       <section class="main__guaranteed">
-        <h3 class="guaranteed__title">A Perfect Smile Guaranteed</h3>
-        <p class="guaranteed__text">On the other hand, we denounce with righteous indignation and dislike men
-          who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</p>
-        <section class="guaranteed__cards">
+        <h3 class="guaranteed__title">Especialidades</h3>
+        <p class="guaranteed__text">Que especialidades manejan en su clínica dental<section class="guaranteed__cards">
           <!-- Slider main container -->
           <div class="swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide">
+              <div class="swiper-slide" lazy="true">
                 <div class="guaranteed__card">
                   <picture class="guaranteed__card--picture">
-                    <img class="guaranteed__card--image" src="./assets/images/index/guaranteed/tooth-vector.webp"
+                    <img class="guaranteed__card--image" src="./assets/images/index/guaranteed/ortodoncia-card-image-1.svg"
                       alt="icon-tooth" title="icon-tooth">
                   </picture>
-                  <h4 class="guaranteed__card--subtitle">Teeth Whitening 1</h4>
+                  <h4 class="guaranteed__card--subtitle">Ortodoncia</h4>
+                  <p class="guaranteed__card--text">There are many vacations of passages of Lorem ipsum available, but</p>
+                </div>
+              </div>
+              <div class="swiper-slide" lazy="true">
+                <div class="guaranteed__card">
+                  <picture class="guaranteed__card--picture">
+                    <img class="guaranteed__card--image" src="./assets/images/index/guaranteed/prostodoncia-image-1.svg"
+                      alt="icon-tooth" title="icon-tooth">
+                  </picture>
+                  <h4 class="guaranteed__card--subtitle">Prostodoncia</h4>
                   <p class="guaranteed__card--text">There are many vacations of passages of Lorem ipsum available, but
                     the
                     majority have suffered alteration in some form</p>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide" lazy="true">
                 <div class="guaranteed__card">
                   <picture class="guaranteed__card--picture">
-                    <img class="guaranteed__card--image" src="./assets/images/index/guaranteed/tooth-vector.webp"
+                    <img class="guaranteed__card--image" src="./assets/images/index/guaranteed/cirugiaMolares-image-1.svg"
                       alt="icon-tooth" title="icon-tooth">
                   </picture>
-                  <h4 class="guaranteed__card--subtitle">Teeth Whitening 2</h4>
+                  <h4 class="guaranteed__card--subtitle">Cirugía de terceros molares</h4>
                   <p class="guaranteed__card--text">There are many vacations of passages of Lorem ipsum available, but
                     the
                     majority have suffered alteration in some form</p>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide" lazy="true">
                 <div class="guaranteed__card">
                   <picture class="guaranteed__card--picture">
-                    <img class="guaranteed__card--image" src="./assets/images/index/guaranteed/tooth-vector.webp"
+                    <img class="guaranteed__card--image" src="./assets/images/index/guaranteed/disenoSonrisa-image-1.svg"
                       alt="icon-tooth" title="icon-tooth">
                   </picture>
-                  <h4 class="guaranteed__card--subtitle">Teeth Whitening 3</h4>
+                  <h4 class="guaranteed__card--subtitle">Diseño de sonrisa</h4>
                   <p class="guaranteed__card--text">There are many vacations of passages of Lorem ipsum available, but
                     the
                     majority have suffered alteration in some form</p>
@@ -186,19 +197,19 @@
           <p class="hygiene__text">Lorem ipsum dolor sit amet, Consectetur adipiscing eliti sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           <div class="hygiene__cards">
-            <div class="hygiene__card">
+            <div class="hygiene__card  hygiene__card--blue">
               <picture class="hygiene__card--picture">
-                <img class="hygiene__card--image" src="./assets/images/index/hygiene/icon-hygiene-tooth.webp" alt="">
+                <img class="hygiene__card--image" src="./assets/images/index/hygiene/preciosCompetitivos-image-1.svg" alt="">
               </picture>
-              <h4 class="hygiene__card--subtitle">Root canal specialist</h4>
+              <h4 class="hygiene__card--subtitle">Precios competetitivos</h4>
               <p class="hygiene__block--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis inventore
                 totam temporibus </p>
             </div>
-            <div class="hygiene__card">
+            <div class="hygiene__card hygiene__card--violet">
               <picture class="hygiene__card--picture">
-                <img class="hygiene__card--image" src="./assets/images/index/hygiene/icon-hygiene-tooth.webp" alt="">
+                <img class="hygiene__card--image" src="./assets/images/index/hygiene/mejorTrato-image-1.svg" alt="">
               </picture>
-              <h4 class="hygiene__card--subtitle">Root canal specialist</h4>
+              <h4 class="hygiene__card--subtitle">El mejor trato</h4>
               <p class="hygiene__block--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis inventore
                 totam temporibus </p>
             </div>
@@ -259,6 +270,19 @@
         </div>
 
       </section>
+
+      <hr class="footer__separator">
+
+      <section class="footer__copyrigth">
+        <p class="copyright__text">
+          ©2024 Dentarios. Todos los derechos reservados
+          <div class="copyright__terms">
+            <span class="copyright__term"><a href="#">Política de privacidad</a></span>
+            <span class="copyright__term"><a href="#">Terminos y Condiciones</a></span>
+          </div>
+        </p>
+      </section>
+
     </footer>
 
 
