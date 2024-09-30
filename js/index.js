@@ -15,15 +15,19 @@ document.getElementById("nav-close").addEventListener("click", function(e) {
 const header = document.querySelector('.container__header');
 const stickyClass = 'sticky'; 
 
-window.addEventListener('scroll', function () {
-  if (window.scrollY > 100) { 
-    header.classList.add(stickyClass);  'sticky'
-  } else {
-    header.classList.remove(stickyClass); 
-  }
-});
+if (window.matchMedia("(max-width: 768px)").matches) {
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 100) { 
+      header.classList.add(stickyClass);
+    } else {
+      header.classList.remove(stickyClass); 
+    }
+  });
+  
+}
 
-//Swiper JS
+
+//Swiper Hygiene
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
@@ -44,5 +48,7 @@ const swiper = new Swiper('.swiper', {
     }
   }
 
-  
 });
+
+/* Swiper promotions */
+
