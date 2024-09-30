@@ -19,7 +19,7 @@
 
   <!-- Script -->
   <script src="./js/index.js" defer></script>
-  <title>Ortho Estetic</title>
+  <title>ORTHOESTETIC</title>
 </head>
 
 <body>
@@ -34,23 +34,29 @@
         </div>
         <ul class="header__nav--list">
           <li class="header__nav--item">
-            <a href="#presentation-container">Inicio</a>
+            <a href="#presentation-container" id="nav-index">Inicio</a>
           </li>
           <li class="header__nav--item">
-            <a href="#services-container">Servicios</a>
+            <a href="#services-container" id="nav-services">Servicios</a>
           </li>
           <li class="header__nav--item">
-            <a href="#instalations-container">Instalaciones</a>
+            <a href="#instalations-container" id="nav-instalations">Instalaciones</a>
           </li>
           <li class="header__nav--item">
-            <a href="#promotions-container">Promociones</a>
+            <a href="#promotions-container" id="nav-promotions">Promociones</a>
           </li>
           <li class="header__nav--item">
-            <a href="#values-container">Valores</a>
+            <a href="#values-container" id="nav-values">Valores</a>
+          </li>
+          <li class="header__nav--item header__nav--call">
+            <a target="_blank" href="tel:5529195547">
+              Urgencias 24hrs
+            </a>
           </li>
           <li class="header__nav--item header__nav--btn">
-            <a href="https://api.whatsapp.com/send?phone=525529195547">Contáctanos</a>
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=525529195547">Contáctanos</a>
           </li>
+
         </ul>
         <div class="header__btn--pc">
           <a target="_blank" href="https://api.whatsapp.com/send?phone=525529195547">Contáctanos</a>
@@ -69,7 +75,7 @@
               precios accesibles
             </p>
             <button class="presentation__row--btn">
-              <a href="https://maps.app.goo.gl/dpPbqvGk2ahQopii8" target="_blank">
+              <a href="https://maps.app.goo.gl/JbEMgXgVfBpNbKpp7" target="_blank">
                 Visítanos
                 <span><i class="fa-solid fa-arrow-right"></i></span>
               </a>
@@ -123,7 +129,7 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
-                <div class="guaranteed__card">
+                <div class="guaranteed__card" id="show-ortodoncia" onclick="window.modalOrtodoncia.showModal();">
                   <picture class="guaranteed__card--picture">
                     <img class="guaranteed__card--image"
                       src="./assets/images/index/guaranteed/ortodoncia-card-image-1.svg" alt="icon-tooth"
@@ -136,7 +142,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="guaranteed__card">
+                <div class="guaranteed__card" onclick="window.modalProstotodoncia.showModal()">
                   <picture class="guaranteed__card--picture">
                     <img class="guaranteed__card--image" src="./assets/images/index/guaranteed/prostodoncia-image-1.svg"
                       alt="icon-tooth" title="icon-tooth" />
@@ -148,7 +154,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="guaranteed__card">
+                <div class="guaranteed__card" onclick="window.modalCirugia.showModal();">
                   <picture class="guaranteed__card--picture">
                     <img class="guaranteed__card--image"
                       src="./assets/images/index/guaranteed/cirugiaMolares-image-1.svg" alt="icon-tooth"
@@ -163,7 +169,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="guaranteed__card">
+                <div class="guaranteed__card" onclick="window.modalDiseno.showModal();">
                   <picture class="guaranteed__card--picture">
                     <img class="guaranteed__card--image"
                       src="./assets/images/index/guaranteed/disenoSonrisa-image-1.svg" alt="icon-tooth"
@@ -187,6 +193,63 @@
             <div class="swiper-scrollbar"></div>
           </div>
         </section>
+        <div class="guaranteed__modals">
+          <dialog id="modalOrtodoncia" class="modal__services">
+            <div class="dialog__container">
+              <div class="dialog__header">
+                <h2 class="dialog__title">Ortodoncia</h2>
+                <button class="dialog__header--btn" onclick="window.modalOrtodoncia.close();"><i
+                    class="fa-solid fa-x"></i></button>
+              </div>
+              <div class="dialog__images">
+                <img class="dialog__img" src="./assets/images/index/guaranteed/services/ortodoncia-1.webp" alt="">
+                <img class="dialog__img" src="./assets/images/index/guaranteed/services/ortodoncia-2.webp" alt="">
+              </div>
+            </div>
+          </dialog>
+
+          <dialog id="modalProstotodoncia" class="modal__services">
+            <div class="dialog__container">
+              <div class="dialog__header">
+                <h2 class="dialog__title">Prostodoncia</h2>
+                <button class="dialog__header--btn" onclick="window.modalProstotodoncia.close();"><i
+                    class="fa-solid fa-x"></i></button>
+              </div>
+              <div class="dialog__images">
+                <img class="dialog__img" src="./assets/images/index/guaranteed/services/prostodoncia-1.png" alt="">
+                <img class="dialog__img" src="./assets/images/index/guaranteed/services/prostodoncia-2.png" alt="">
+              </div>
+            </div>
+          </dialog>
+
+          <dialog id="modalCirugia" class="modal__services">
+            <div class="dialog__container">
+              <div class="dialog__header">
+                <h2 class="dialog__title">Cirugías</h2>
+                <button class="dialog__header--btn" onclick="window.modalCirugia.close();"><i
+                    class="fa-solid fa-x"></i></button>
+              </div>
+              <div class="dialog__images">
+                <img class="dialog__img" src="./assets/images/index/guaranteed/services/cirugia-1.png" alt="">
+                <img class="dialog__img" src="./assets/images/index/guaranteed/services/cirugia-2.webp" alt="">
+              </div>
+            </div>
+          </dialog>
+
+          <dialog id="modalDiseno" class="modal__services">
+            <div class="dialog__container">
+              <div class="dialog__header">
+                <h2 class="dialog__title">Diseño de sonrisa</h2>
+                <button class="dialog__header--btn" onclick="window.modalDiseno.close();"><i
+                    class="fa-solid fa-x"></i></button>
+              </div>
+              <div class="dialog__images">
+                <img class="dialog__img" src="./assets/images/index/guaranteed/services/diseno-1.png" alt="">
+                <img class="dialog__img" src="./assets/images/index/guaranteed/services/diseno-2.png" alt="">
+              </div>
+            </div>
+          </dialog>
+        </div>
       </section>
 
       <hr />
@@ -197,15 +260,24 @@
         <!-- <img class="promotion__image" src="./assets/images/index/promotions/promotion-1.webp" alt="">
               -->
         <div class="promotions__items">
-          <img class="promotion__image" src="./assets/images/index/promotions/promotion-1.webp" alt="" />
-          <img class="promotion__image" src="./assets/images/index/promotions/promotion-2.webp" alt="" />
-          <img class="promotion__image" src="./assets/images/index/promotions/promotion-3.webp" alt="" />
-          <img class="promotion__image" src="./assets/images/index/promotions/promotion-4.webp" alt="" />
+          <a href="https://api.whatsapp.com/send?phone=525529195547" target="_blank">
+            <img class="promotion__image" src="./assets/images/index/promotions/promotion-1.webp" alt="" />
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=525529195547" target="_blank">
+            <img class="promotion__image" src="./assets/images/index/promotions/promotion-2.webp" alt="" />
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=525529195547" target="_blank">
+            <img class="promotion__image" src="./assets/images/index/promotions/promotion-3.webp" alt="" />
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=525529195547" target="_blank">
+            <img class="promotion__image" src="./assets/images/index/promotions/promotion-4.webp" alt="" />
+          </a>
         </div>
 
-          <button class="promotions__btn">
-            <a class="promotions__btn--a" target="_blank" href="https://api.whatsapp.com/send?phone=525529195547">Contáctanos</a>
-          </button>
+        <button class="promotions__btn">
+          <a class="promotions__btn--a" target="_blank"
+            href="https://api.whatsapp.com/send?phone=525529195547">Contáctanos</a>
+        </button>
       </section>
 
       <hr />
@@ -255,7 +327,7 @@
             </div>
           </div>
           <button class="equipment__btn">
-            <a href="https://maps.app.goo.gl/dpPbqvGk2ahQopii8" target="_blank">
+            <a href="https://maps.app.goo.gl/JbEMgXgVfBpNbKpp7" target="_blank">
               Visítanos
               <span><i class="fa-solid fa-arrow-right"></i></span>
             </a>
@@ -282,7 +354,7 @@
           <img class="galery__item" src="./assets/images/index/equipment-galery/equipment-galery-6.webp" alt="">
 
         </div>
-      </div> 
+      </div>
 
       <hr />
 
@@ -326,12 +398,19 @@
           </div>
         </div>
       </section>
+
+
     </main>
 
     <hr />
 
-    
-    <a class="btn__wp" href="https://api.whatsapp.com/send?phone=525529195547" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></i>
+
+
+    <a class="btn__call" href="tel:5529195547" target="_blank"><i
+        class="fa-solid fa-phone"></i></a>
+
+    <a class="btn__wp" href="https://api.whatsapp.com/send?phone=525529195547" target="_blank"><i
+        class="fa-brands fa-whatsapp"></i></a></i>
 
     <footer class="container__footer">
       <div class="footer__row">
@@ -381,10 +460,8 @@
           <h6 class="news__title">Ubicación</h6>
 
           <iframe class="footer__map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.7252648406234!2d-98.94725902376169!3d19.33772438121252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce1d8d48e7ff51%3A0x69967ac676c26904!2sC.%20Libertad%202-Lt%2010%2C%20Mariel%2C%2056516%20San%20Isidro%2C%20M%C3%A9x.!5e0!3m2!1ses!2smx!4v1727661790074!5m2!1ses!2smx"
-            width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240947.62557955532!2d-99.17045732593857!3d19.33419462184953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce1dcab36cccdb%3A0x6ddc7241aad984ef!2sCl%C3%ADnica%20DENTAL%20ORTHOESTETIC!5e0!3m2!1ses-419!2smx!4v1727728802081!5m2!1ses-419!2smx"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
           <!-- <div class="news__item">
              i <picture class="new__picture">

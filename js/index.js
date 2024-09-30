@@ -15,8 +15,20 @@ btnCloseHamburguer.addEventListener("click", function(e) {
   document.querySelector(".header__nav--list").classList.remove("is-active")
   document.querySelector(".close").classList.remove("is-active-btn-close");
   btnHamburguer.style.display = "block";
-
 })
+
+
+//Botonoes de la barra de navegacion
+const buttonsNav = ['nav-index', 'nav-services', 'nav-instalations', 'nav-promotions', 'nav-values'];
+
+buttonsNav.map((element) => {
+  document.querySelector(`#${element}`).addEventListener('click', (e)=>{
+    document.querySelector(".header__nav--list").classList.remove("is-active")
+    document.querySelector(".close").classList.remove("is-active-btn-close");
+    btnHamburguer.style.display = "block";
+  })
+})
+
 
 //Cambiar la posición del header cuando se haga scroll
 const header = document.querySelector('.container__header');
@@ -56,6 +68,3 @@ const swiper = new Swiper('.swiper', {
   }
 
 });
-
-/* Swiper promotions */
-
