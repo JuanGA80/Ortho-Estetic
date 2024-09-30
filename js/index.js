@@ -1,14 +1,21 @@
 
 //Función del botón hamburguesa
-document.getElementById("nav-toggle").addEventListener("click", function (e) {
+let btnHamburguer = document.getElementById("nav-toggle");
+let btnCloseHamburguer = document.getElementById("nav-close");
+
+btnHamburguer.addEventListener("click", function (e) {
   e.preventDefault();
   document.querySelector(".header__nav--list").classList.add("is-active");
   document.querySelector(".close").classList.add("is-active-btn-close");
+  btnHamburguer.style.display = "none"
 });
-document.getElementById("nav-close").addEventListener("click", function(e) {
+
+btnCloseHamburguer.addEventListener("click", function(e) {
   e.preventDefault();
   document.querySelector(".header__nav--list").classList.remove("is-active")
   document.querySelector(".close").classList.remove("is-active-btn-close");
+  btnHamburguer.style.display = "block";
+
 })
 
 //Cambiar la posición del header cuando se haga scroll
