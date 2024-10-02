@@ -167,6 +167,8 @@ body {
   text-align: center;
 }
 
+.header__
+
 /* Section Main */
 
 .container__main {
@@ -640,7 +642,7 @@ dialog {
 }
 
 .hygiene__image {
-  width: 50%;
+  width: 70%;
   display: block;
   z-index: 2;
   position: relative;
@@ -935,8 +937,9 @@ dialog {
     position: static;
     display: flex;
     height: auto;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 10px;
     padding: 1rem 30px;  
     background-color: #fff;
     width: 100%;
@@ -961,6 +964,7 @@ dialog {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
     position: static;
     box-sizing: border-box;
   }
@@ -969,9 +973,9 @@ dialog {
     flex-basis: 60%;
     height: auto;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     list-style: none;
+    justify-content: center;
     padding-right: 10px;
     margin-left: 10px;
     color: #000;
@@ -993,19 +997,30 @@ dialog {
   }
 
   .header__nav--call {
-    position: static;
-    font-size: 1rem;
-    border: 15px;
-    padding: 1rem 0;
-    background-color: #e91c1c;
-    width: auto;
-    padding: 0.8rem;
-    border-radius: 10px;
-    transition: all 0.5s ease-in-out;
+    display: none;
   }
 
-  .header__nav--call a {
+  .header__call--pc { 
+    display: flex;
+    background-color: #e91c1c;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    height: auto;
+    border-radius: 10px;
+    transition: all 0.6s ease-in;
     color: #fff;
+    font-size: 1.4rem;
+    height: 80%;
+    text-decoration: none;
+  }
+
+
+  .header__nav--call:hover{
+    opacity: 0.7;
+    cursor: pointer;
   }
 
   .header__nav--btn {
@@ -1017,23 +1032,24 @@ dialog {
     position: static;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: #000;
     padding: 0.5rem;
-    width: 50%;
     height: auto;
     border-radius: 10px;
     transition: all 0.6s ease-in;
+    color: #fff;
+    font-size: 1.4rem;
+    height: 80%;
+    text-decoration: none;
   }
 
-  .header__btn--pc a {
-    text-decoration: none;
-    color: #fff;
-  }
+  
 
   .header__btn--pc:hover,
   .header__btn--pc a:hover {
     opacity: 0.6;
-    font-size: 1.7rem;
+    cursor: pointer;
   }
 
   .toggle,
@@ -1096,6 +1112,7 @@ dialog {
   .presentation__row--btn:hover {
     cursor: pointer;
     opacity: 0.7;
+    font-size: 1.3rem;
   }
 
   .presentation__separator {
@@ -1162,6 +1179,7 @@ dialog {
 
   .guaranteed__card:hover {
     background-color: #6fe5e7;
+    cursor: pointer;
   }
 
   .guaranteed__card--picture {
@@ -1489,7 +1507,7 @@ dialog {
   }
 
   .hygiene__image {
-    width: 40%;
+    height: 80%;
     display: block;
     z-index: 2;
     object-fit: contain;
