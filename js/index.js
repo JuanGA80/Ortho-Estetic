@@ -34,7 +34,7 @@ buttonsNav.map((element) => {
 const header = document.querySelector('.container__header');
 const stickyClass = 'sticky'; 
 
-if (window.matchMedia("(max-width: 768px)").matches) {
+if (window.matchMedia("(max-width: 767px)").matches) {
   window.addEventListener('scroll', function () {
     if (window.scrollY > 100) { 
       header.classList.add(stickyClass);

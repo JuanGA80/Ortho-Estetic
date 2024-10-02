@@ -72,7 +72,6 @@ body {
   display: none;
 }
 
-
 .header__nav--list a {
   text-decoration: none;
   color: inherit;
@@ -93,7 +92,6 @@ body {
   border-radius: 15px;
   transition: all 0.5s ease-in-out;
 }
-
 
 .header__nav--call a {
   color: #fff;
@@ -407,7 +405,7 @@ dialog {
   font-size: 2rem;
 }
 
-.dialog__header--btn:hover{
+.dialog__header--btn:hover {
   cursor: pointer;
 }
 
@@ -513,7 +511,6 @@ dialog {
 
 .equipment__btn:hover {
   cursor: pointer;
-  font-size: 1.2rem;
   opacity: 0.7;
 }
 
@@ -541,7 +538,7 @@ dialog {
 
 .galery__item {
   width: 45%;
-  aspect-ratio: 3/2;
+  object-fit: contain;
 }
 
 /* Section Promotions */
@@ -598,7 +595,6 @@ dialog {
 
 .promotions__btn:hover {
   cursor: pointer;
-  font-size: 1.2rem;
   opacity: 0.7;
 }
 
@@ -644,7 +640,7 @@ dialog {
 }
 
 .hygiene__image {
-  width: 100%;
+  width: 50%;
   display: block;
   z-index: 2;
   position: relative;
@@ -915,10 +911,14 @@ dialog {
   text-decoration: none;
 }
 
-
 /* End media: max-width: 425px */
 
 @media (min-width: 767px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
   /* Container */
 
@@ -932,12 +932,12 @@ dialog {
   /* Header */
 
   .container__header {
-    height: auto;
-    position: sticky;
+    position: static;
     display: flex;
-    justify-content: space-between;
+    height: auto;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 1rem 4.3rem;
+    padding: 1rem 30px;  
     background-color: #fff;
     width: 100%;
     border-bottom: 1px solid #000;
@@ -945,13 +945,11 @@ dialog {
   }
 
   .header__logo {
-    position: absolute;
-    width: 160px;
-    position: sticky;
-    box-sizing: border-box;
+    width: 100%;
     display: flex;
     align-items: center;
-    z-index: 14;
+    position: static;
+    flex-basis: 15%;
   }
 
   .header__logo--image {
@@ -960,14 +958,16 @@ dialog {
 
   .header__nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin: 2px 10px;
     width: 100%;
+    position: static;
     box-sizing: border-box;
   }
 
   .header__nav--list {
-    width: auto;
+    flex-basis: 60%;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -975,12 +975,16 @@ dialog {
     padding-right: 10px;
     margin-left: 10px;
     color: #000;
+    box-sizing: border-box;
+    position: relative;
+    flex-wrap: wrap;
   }
 
   .header__nav--item {
     margin: 0 15px;
     font-size: 1.3rem;
     display: block;
+    position: relative;
   }
 
   .header__nav--item a {
@@ -989,17 +993,17 @@ dialog {
   }
 
   .header__nav--call {
+    position: static;
     font-size: 1rem;
     border: 15px;
     padding: 1rem 0;
     background-color: #e91c1c;
-    width: 50%;
+    width: auto;
     padding: 0.8rem;
     border-radius: 10px;
     transition: all 0.5s ease-in-out;
   }
-  
-  
+
   .header__nav--call a {
     color: #fff;
   }
@@ -1009,10 +1013,14 @@ dialog {
   }
 
   .header__btn--pc {
+    flex-basis: 10%;
+    position: static;
     display: flex;
     align-items: center;
     background-color: #000;
-    padding: 0.8rem;
+    padding: 0.5rem;
+    width: 50%;
+    height: auto;
     border-radius: 10px;
     transition: all 0.6s ease-in;
   }
@@ -1028,8 +1036,11 @@ dialog {
     font-size: 1.7rem;
   }
 
-  .toggle {
-    display: none;
+  .toggle,
+  .close,
+  .is-active-btn-close,
+  .header__nav--item.header__nav--btn {
+    display: none; 
   }
 
   /* Section Main */
@@ -1084,7 +1095,6 @@ dialog {
 
   .presentation__row--btn:hover {
     cursor: pointer;
-    font-size: 1.5rem;
     opacity: 0.7;
   }
 
@@ -1239,11 +1249,10 @@ dialog {
 
   .dialog__img {
     flex-basis: 50%;
-    
+
     height: 400px;
     object-fit: contain;
   }
-
 
   /* Section Equipment */
 
@@ -1345,7 +1354,6 @@ dialog {
 
   .equipment__btn:hover {
     cursor: pointer;
-    font-size: 1.5rem;
     opacity: 0.7;
   }
 
@@ -1374,7 +1382,7 @@ dialog {
   .galery__item {
     width: 30%;
     margin-top: 0.5rem;
-    aspect-ratio: 3/2;
+    object-fit: contain;
   }
 
   /* Section Promotions */
@@ -1413,7 +1421,6 @@ dialog {
     width: 100%;
     position: relative;
     transition: all 0.4s ease-in-out;
-
   }
 
   .promotion__image:hover {
@@ -1482,9 +1489,10 @@ dialog {
   }
 
   .hygiene__image {
-    width: 80%;
+    width: 40%;
     display: block;
     z-index: 2;
+    object-fit: contain;
     position: relative;
   }
 
@@ -1770,6 +1778,4 @@ dialog {
   }
 
   /* End PC View */
-
-
 }
