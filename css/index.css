@@ -1183,15 +1183,16 @@ dialog {
   }
 
   .guaranteed__card--picture {
-    width: 30%;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   .guaranteed__card--image {
-    width: 80%;
-    height: 70%;
+    width: 40px;
+    height: 40px;
   }
 
   .guaranteed__card--subtitle {

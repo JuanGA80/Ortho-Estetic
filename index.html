@@ -189,6 +189,32 @@
                   </p>
                 </div>
               </div>
+              <div class="swiper-slide">
+                <div class="guaranteed__card" id="show-ortodoncia" onclick="window.modalEndodoncia.showModal();">
+                  <picture class="guaranteed__card--picture">
+                    <img class="guaranteed__card--image"
+                      src="./assets/images/index/guaranteed/endodoncia.svg" alt="icon-tooth"
+                      title="icon-tooth" />
+                  </picture>
+                  <h4 class="guaranteed__card--subtitle">Endodoncia</h4>
+                  <p class="guaranteed__card--text">
+                    Tratar el interior infectado del diente.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="guaranteed__card" id="show-ortodoncia" onclick="window.modalBlanqueamiento.showModal();">
+                  <picture class="guaranteed__card--picture">
+                    <img class="guaranteed__card--image"
+                      src="./assets/images/index/guaranteed/blanqueamiento.svg" alt="icon-tooth"
+                      title="icon-tooth" />
+                  </picture>
+                  <h4 class="guaranteed__card--subtitle">Blanqueamiento</h4>
+                  <p class="guaranteed__card--text">
+                    Obtener una sonrisa más blanca con resultados duraderos.
+                  </p>
+                </div>
+              </div>
             </div>
 
             <!-- If we need navigation buttons -->
@@ -255,6 +281,35 @@
               </div>
             </div>
           </dialog>
+        
+          <dialog id="modalEndodoncia" class="modal__services">
+            <div class="dialog__container">
+              <div class="dialog__header">
+                <h2 class="dialog__title">Endodoncia</h2>
+                <button class="dialog__header--btn" onclick="window.modalEndodoncia.close();"><i
+                    class="fa-solid fa-x"></i></button>
+              </div>
+              <div class="dialog__images">
+                <img class="dialog__img" src="./assets/images/index/guaranteed/services/endodoncia-1.webp" alt="">
+                <img class="dialog__img" src="./assets/images/index/guaranteed/services/endodoncia-2.webp" alt="">
+              </div>
+            </div>
+          </dialog>
+
+          <dialog id="modalBlanqueamiento" class="modal__services">
+            <div class="dialog__container">
+              <div class="dialog__header">
+                <h2 class="dialog__title">Blanqueamiento</h2>
+                <button class="dialog__header--btn" onclick="window.modalBlanqueamiento.close();"><i
+                    class="fa-solid fa-x"></i></button>
+              </div>
+              <div class="dialog__images">
+                <img class="dialog__img" src="./assets/images/index/guaranteed/services/blanqueamiento-antes.jpeg" alt="">
+                <img class="dialog__img" src="./assets/images/index/guaranteed/services/blanqueamiento-durante.jpeg" alt="">
+              </div>
+            </div>
+          </dialog>
+
         </div>
       </section>
 
